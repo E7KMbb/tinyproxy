@@ -22,7 +22,7 @@ jobs:
         install-location: 'toolchains'
     - name: Install asciidoc
       run: |
-        sudo apt-get install asciidoc
+        apt-get install asciidoc
     - name: asciidoc
       run: |
         ./autogen.sh
