@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2.0.0
     - name: asciidoc Setup
     - uses: mgred/asciidoctor-action@master
-      run: pkg install asciidoc
+      run: hg clone -r 8.6.8 https://asciidoc.googlecode.com/hg/asciidoc-8.6.8
     - name: asciidoc
       run: |
         ./autogen.sh
